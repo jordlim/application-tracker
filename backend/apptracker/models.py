@@ -1,8 +1,6 @@
 from django.db import models
 
-# Create your models here.
-
-class AppTracker(models.Model):
+class Application(models.Model):
     title = models.CharField(max_length=120)
     company = models.CharField(max_length=120)
     applied = models.BooleanField(default=False)

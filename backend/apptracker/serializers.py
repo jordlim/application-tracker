@@ -1,7 +1,7 @@
 from rest_framework import serializers
-from .models import AppTracker
+from .models import Application
 
 class TrackerSerializer(serializers.ModelSerializer):
     class Meta:
-        model = AppTracker
+        model = Application
         fields = ('id', 'title', 'company', 'applied')
